@@ -1,3 +1,5 @@
 module.exports.home = function(req, res){
-    return res.end("Let's Go");
+    return res.render('home', {
+                title: "Chess | Home"
+        });
 }
