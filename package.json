@@ -16,6 +16,8 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mongoose": "^5.12.11"
+    "mongoose": "^5.12.11",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   }
 }
