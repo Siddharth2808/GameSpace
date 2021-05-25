@@ -6,6 +6,7 @@ const router = express.Router();
 const chessController = require('../controller/chess_controller');
 
 router.get('/vsComputer', chessController.play);
+router.get('/home', chessController.home);
 
 
 
