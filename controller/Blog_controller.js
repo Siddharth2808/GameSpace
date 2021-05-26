@@ -3,3 +3,9 @@ module.exports.home = function(req, res){
                 title: "Blog | Home"
         });
 }
+
+module.exports.blog1 = function(req, res){
+        return res.render('Blogs/Blog1', {
+                    title: "Blog1"
+            });
+    }
