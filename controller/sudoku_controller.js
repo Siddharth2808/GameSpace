@@ -3,6 +3,21 @@ module.exports.home = function(req, res){
                     title: "Sudoku | Home"
             });
     }
+    module.exports.easy = function(req, res){
+        return res.render('Sudoku/sudoku_easy', {
+                    title: "Puzzle | easy"
+            });
+    }
+    module.exports.medium = function(req, res){
+        return res.render('Sudoku/sudoku_medium', {
+                    title: "Puzzle | Medium"
+            });
+    }
+    module.exports.hard = function(req, res){
+        return res.render('Sudoku/sudoku_hard', {
+                    title: "Puzzle | hard"
+            });
+    }
 
  module.exports.puzzle1 = function(req, res){
         return res.render('Sudoku/puzzles/puzzle-1', {
