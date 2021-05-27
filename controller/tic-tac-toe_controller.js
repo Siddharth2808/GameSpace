@@ -1,11 +1,17 @@
-module.exports.play = function(req, res){
-    return res.render('Tic-tac-toe/tic-tac-toe-gameplay', {
-                title: "Tic-tac-toe | Play"
+module.exports.playeasy = function (req, res) {
+        return res.render('Tic-tac-toe/tic-tac-toe-easy', {
+                title: "Tic-tac-toe | Easy"
         });
 }
 
-module.exports.home = function(req, res){
+module.exports.playhard = function (req, res) {
+        return res.render('Tic-tac-toe/tic-tac-toe-hard', {
+                title: "Tic-tac-toe | Hard"
+        });
+}
+
+module.exports.home = function (req, res) {
         return res.render('Tic-tac-toe/tic-tac-toe-home', {
-                    title: "Tic-tac-toe | Home"
-            });
-    }
+                title: "Tic-tac-toe | Home"
+        });
+}
