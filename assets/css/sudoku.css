@@ -1,0 +1,24 @@
+body{
+    margin: 0%;
+}
+
+
+td {
+	border:  2px solid rgb(43, 31, 31);
+	height:  50px;
+	width:  50px;
+	text-align:  center;
+    font-size: 30px;
+	vertical-align:  middle;
+	font-family: "Lucida Console", "Courier New", monospace;
+	cursor: pointer;
+    background-color: cyan;
+}
+
+table {
+	border-collapse: collapse;
+	 /* position: absolute; */
+	/*left: 10%;*/
+	 margin-left: 155px; 
+	top: 50px;
+}
