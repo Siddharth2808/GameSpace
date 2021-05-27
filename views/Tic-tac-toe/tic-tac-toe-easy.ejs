@@ -37,17 +37,31 @@
         </tr>
     </table>
 
-    <!-- endgame text-->
-    <div class="endgame">
-        <div class="text"></div>
-    </div>
+
 
     <!--Reset option-->
     <div class="container">
         <button type="button" class="btn btn-dark" onclick="startGame()">Reset Game</button>
     </div>
 
-
+<!-- Button trigger modal -->
+<button  type="button" class="btn btn-primary" id="result-button" data-toggle="modal" data-target="#exampleModalCenter" hidden >
+    Result
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Result</h5>
+        </div>
+        <div class="modal-body" id="result">
+          Finish your match first.
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <script src="/javascript/tic-tac-toe-easy.js" charset="utf-8"></script>

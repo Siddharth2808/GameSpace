@@ -21,7 +21,7 @@ startGame();
 
 function startGame() {
     //sets the endgame display style to none
-    document.querySelector(".endgame").style.display = "none";
+    // document.querySelector(".endgame").style.display = "none";
     //sets the originalBoard to have key values from 0-8
     originalBoard = Array.from(Array(9).keys());
     //iterate over all cells 
@@ -82,8 +82,10 @@ function gameOver(gameWon) {
 }
 
 function declareWinner(who) {
-    document.querySelector(".endgame").style.display = "block";
-    document.querySelector(".endgame .text").innerText = who;
+    // document.querySelector(".endgame").style.display = "block";
+    //  document.querySelector(".endgame .text").innerText = who;
+    document.getElementById("result").innerText = who;
+    document.getElementById("result-button").click(); 
 }
 
 function emptySquares() {
