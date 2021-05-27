@@ -5,8 +5,9 @@ const router = express.Router();
 
 const tttController = require('../controller/tic-tac-toe_controller');
 
-router.get('/play', tttController.play);
-router.get('/home',tttController.home);
+router.get('/play-easy', tttController.playeasy);
+router.get('/play-hard', tttController.playhard);
+router.get('/home', tttController.home);
 
 
 module.exports = router;
