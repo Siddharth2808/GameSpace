@@ -6,6 +6,7 @@ const router = express.Router();
 const sudokuController = require('../controller/sudoku_controller');
 
 router.get('/home', sudokuController.home);
+router.get('/solver', sudokuController.solver);
 router.get('/easy', sudokuController.easy);
 router.get('/medium', sudokuController.medium);
 router.get('/hard', sudokuController.hard);

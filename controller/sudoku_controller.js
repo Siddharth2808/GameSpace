@@ -3,6 +3,11 @@ module.exports.home = function(req, res){
                     title: "Sudoku | Home"
             });
     }
+    module.exports.solver = function(req, res){
+        return res.render('Sudoku/solver', {
+                    title: "Sudoku | Solver"
+            });
+    }
     module.exports.easy = function(req, res){
         return res.render('Sudoku/sudoku_easy', {
                     title: "Puzzle | easy"
