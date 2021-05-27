@@ -38,7 +38,7 @@ table tr td:last-child {
 	border-right: 0;
 }
 
-.endgame {
+/* .endgame {
   display: none;
   width: 200px;
   top: 120px;
@@ -52,4 +52,4 @@ table tr td:last-child {
   border-radius: 5px;
   color: white;
   font-size: 2em;
-}
+} */
