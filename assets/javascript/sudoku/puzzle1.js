@@ -37,7 +37,7 @@ function startGame() {
     //sets the originalBoard to have key values from 0-80
     originalBoard = Array.from(Array(81).keys());
     //iterate over all cells 
-    console.log(cells.length);
+    //console.log(cells.length);
     for (let iter = 0; iter <= 80; iter++)
     {    //console.log(input[iter]);
          if(input[iter]!=-1) {cells[iter].innerText = input[iter];document.getElementById(iter).style.color = 'grey';}
@@ -62,7 +62,8 @@ document.addEventListener("keydown", e => {
         let op=0;
         for (let iter = 0; iter <= 80; iter++)
         {
-         if(output[iter]!=parseInt(cells[iter].innerText, 10)) {console.log("yaha ",iter);op=1;break;}
+         if(output[iter]!=parseInt(cells[iter].innerText, 10)) {//console.log("yaha ",iter);
+         op=1;break;}
         }
         if(op==0) {document.getElementById(cellNow).style.background = 'cyan';document.getElementById("result").innerText="You Win";gameover=1;}
         }
