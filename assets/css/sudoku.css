@@ -12,7 +12,7 @@ td {
 	vertical-align:  middle;
 	font-family: "Lucida Console", "Courier New", monospace;
 	cursor: pointer;
-    background-color: cyan;
+    background-color: rgb(145, 209, 209);
 }
 
 table {
