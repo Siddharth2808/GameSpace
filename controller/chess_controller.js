@@ -15,6 +15,26 @@ module.exports.home = function(req, res){
                     title: "Chess | Home"
             });
     }
+module.exports.p1 = function(req, res){
+        return res.render('Chess/select_color1', {
+                    title: "Chess | Page-1"
+            });
+}
+module.exports.p2 = function(req, res){
+        return res.render('Chess/select_color2', {
+                    title: "Chess | Page-2"
+            });
+}
+module.exports.p3 = function(req, res){
+        return res.render('Chess/select_color3', {
+                    title: "Chess | Page-3"
+            });
+}
+module.exports.p4 = function(req, res){
+        return res.render('Chess/select_color4', {
+                    title: "Chess | Page-4"
+            });
+}
 
 module.exports.level1 = function(req, res){
         return res.render('Chess/chess-level1', {
