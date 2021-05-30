@@ -1,13 +1,16 @@
 html, body {
     height: 100%;
+    
+    /* background-image: url('/img/back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
   }
 #layout-main{
-margin-bottom: 100px;
+  background-color: rgb(49, 46 ,43);
     display: block;
-    min-height: 100%;
-    margin-bottom: 50px; 
-
- 
+    min-height: 65%;
+    
 } 
 footer{
     position:relative;

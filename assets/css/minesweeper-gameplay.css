@@ -15,7 +15,7 @@
   margin-bottom: 10px;
 }
 
-div {
+.container div {
   font-size: 25px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;

@@ -1,14 +1,22 @@
 .board {
-    width: 400px;
-    margin: auto
+    display: inline-block;
+    width: 42%;
+    margin-left:  80px;
+
 }
 
 .info {
+    display: inline-block;
     width: 400px;
     margin: auto;
+    vertical-align: top;
+    margin-left:  200px;
+    margin-top: 30px;
+    
 }
 
 .move-history {
+    display: block;
     max-height: 100px;
     overflow-y: scroll;
 }
