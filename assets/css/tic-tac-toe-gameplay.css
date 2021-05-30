@@ -2,7 +2,9 @@ body{
     margin: 0%;
 }
 
+.container{
 
+}
 td {
 	border:  2px solid rgb(43, 31, 31);
 	height:  100px;
@@ -20,6 +22,7 @@ table {
 	left: 50%;
 	margin-left: -155px; */
 	top: 50px;
+	background-color:slateblue;
 }
 
 table tr:first-child td {
@@ -36,6 +39,12 @@ table tr td:first-child {
 
 table tr td:last-child {
 	border-right: 0;
+}
+#board{
+	margin-left: 40%;
+}
+#board button{
+	margin-left: 95px;
 }
 
 /* .endgame {
