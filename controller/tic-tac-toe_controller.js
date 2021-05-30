@@ -27,3 +27,15 @@ module.exports.home = function (req, res) {
                 title: "Tic-tac-toe | Home"
         });
 }
+
+module.exports.p1 = function (req, res) {
+        return res.render('Tic-tac-toe/select1', {
+                title: "Tic-tac-toe | Choose"
+        });
+}
+
+module.exports.p2 = function (req, res) {
+        return res.render('Tic-tac-toe/select2', {
+                title: "Tic-tac-toe | Choose"
+        });
+}
