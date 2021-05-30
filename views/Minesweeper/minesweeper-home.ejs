@@ -25,27 +25,34 @@
             Play
         </a>
     </li>
-       <li> <div class="container">
-            <p>
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    How to Play?
-                </button>
-            </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
+       <li> <div id="g" >
+        <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"  >
+            How to Play?
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">How to play?</h5>
+                </div>
+                <div class="modal-body">
                     <h3>The objective of Minesweeper is to expose all open areas on the board without hitting any
                         bombs/mines.</h3>
     
-                    <ul>
+                    <ol>
                         <li>Left click on any available space on the grid. If it is a bomb, you already lose!</li>
                         <li>The numbers on the board represent how many bombs are adjacent to a square. For example, if a
                             square has a "3" on it, then there are 3 bombs next to that square. The bombs could be above,
                             below, right left, or diagonal to the square.</li>
                         <li>Avoid all bombs and expose all empty spaces, and win the game!!</li>
-                    </ul>
+                        </ol>
                 </div>
             </div>
+                    
+                </div>
+              </div>
     </div>
 </li>
 

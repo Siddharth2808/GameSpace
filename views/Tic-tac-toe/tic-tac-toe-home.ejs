@@ -37,26 +37,38 @@
         <li>
         <div class="container">
             <p >
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
+                <!-- <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
                     aria-expanded="false" aria-controls="collapseExample">
                     How to Play?
-                </button>
+                </button> -->
+                <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"  >
+                    How to Play?
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">How to play?</h5>
+                        </div>
+                        <div class="modal-body">
+                            <ol>
+                                <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                                <li>You are X, your friend (or the computer in this case) is O. Players take turns putting their
+                                    marks
+                                    in empty squares.</li>
+                                <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+                                </li>
+                                <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends
+                                    in a
+                                    tie.</li>
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    <ol>
-                        <li>The game is played on a grid that's 3 squares by 3 squares.</li>
-                        <li>You are X, your friend (or the computer in this case) is O. Players take turns putting their
-                            marks
-                            in empty squares.</li>
-                        <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
-                        </li>
-                        <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends
-                            in a
-                            tie.</li>
-                    </ol>
-                </div>
-            </div>
         </li>
     </ul>
        

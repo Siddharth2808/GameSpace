@@ -11,7 +11,7 @@ html, body
 .typlist li{
     margin:20px;
 }
-ul{
+ul{ 
     list-style-type: none;
     
 }
@@ -22,3 +22,7 @@ aside{
     left: 800px;
     top: 100px;
 }
+/* #g{
+    position: absolute;
+    margin-lfe :70px;
+} */
