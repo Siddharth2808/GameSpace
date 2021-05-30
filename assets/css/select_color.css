@@ -1,0 +1,24 @@
+html, body
+{
+    width:100%;
+}
+.cboard{
+    display: inline-block;
+    width: 80%;
+    height: 85%;
+    margin-left:  80px;
+}
+.typlist li{
+    margin:20px;
+}
+ul{
+    list-style-type: none;
+    
+}
+aside{
+    display: inline-block;
+    position: absolute; 
+    width: 30%;
+    left: 800px;
+    top: 100px;
+}

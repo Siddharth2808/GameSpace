@@ -344,6 +344,7 @@ var greySquare = function(square) {
 
 if(temp<=8){
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
@@ -359,6 +360,7 @@ var cfg = {
 else if(temp<=12)
 {
     var cfg = {
+        orientation: 'black',
         draggable: true,
         position: 'start',
         //dropOffBoard: 'trash',
@@ -375,6 +377,7 @@ else if(temp<=12)
 else if(temp<=14)
 {
     var cfg = {
+        orientation: 'black',
         draggable: true,
         position: 'start',
         //dropOffBoard: 'trash',
@@ -391,6 +394,7 @@ else if(temp<=14)
 else if(temp<=16)
 {
     var cfg = {
+        orientation: 'black',
         draggable: true,
         position: 'start',
         //dropOffBoard: 'trash',
@@ -408,6 +412,7 @@ else if(temp<=16)
 
 else if(temp<=18){
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
@@ -424,6 +429,7 @@ var cfg = {
 else if(temp<=20)
 {
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
@@ -440,6 +446,7 @@ var cfg = {
 else if(temp<=21)
 {
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
@@ -456,6 +463,7 @@ var cfg = {
 else if(temp<=22)
 {
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
@@ -472,6 +480,7 @@ var cfg = {
 else if(temp<=26)
 {
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
@@ -488,6 +497,7 @@ var cfg = {
 else
 {
 var cfg = {
+    orientation: 'black',
     draggable: true,
     position: 'start',
     //dropOffBoard: 'trash',
