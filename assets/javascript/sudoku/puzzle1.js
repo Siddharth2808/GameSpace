@@ -39,7 +39,7 @@ function startGame() {
     //iterate over all cells 
     //console.log(cells.length);
     for (let iter = 0; iter <= 80; iter++) {    //console.log(input[iter]);
-        if (input[iter] != -1) { cells[iter].innerText = input[iter]; document.getElementById(iter).style.color = 'grey'; }
+        if (input[iter] != -1) { cells[iter].innerText = input[iter]; document.getElementById(iter).style.color = 'black'; }
         else cells[iter].innerText = "";
     }
     // for (let iter = 10; iter < cells.length; iter++) {
@@ -65,7 +65,7 @@ document.addEventListener("keydown", e => {
                     op = 1; break;
                 }
             }
-            if (op == 0) { document.getElementById(cellNow).style.background = 'cyan'; document.getElementById("result").innerText = "You Win"; gameover = 1; }
+            if (op == 0) { document.getElementById(cellNow).style.background = 'white'; document.getElementById("result").innerText = "You Win"; gameover = 1; }
         }
     } // prints ","
 });
@@ -79,9 +79,9 @@ function reply_click(clicked_id) {
     if (gameover == 0) {
         var now = parseInt(clicked_id, 10);
         if (input[now] == -1) {
-            if (now == cellNow) { cellNow = -1; document.getElementById(now).style.background = 'cyan'; }
+            if (now == cellNow) { cellNow = -1; document.getElementById(now).style.background = 'white'; }
             else {
-                if (cellNow != -1) document.getElementById(cellNow).style.background = 'cyan';
+                if (cellNow != -1) document.getElementById(cellNow).style.background = 'white';
                 cellNow = now;
                 document.getElementById(now).style.background = 'blue';
             }
