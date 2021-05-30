@@ -286,6 +286,7 @@ var greySquare = function(square) {
 var cfg = {
     draggable: true,
     position: 'start',
+    //orientation: 'black',
     onDragStart: onDragStart,
     onDrop: onDrop,
     onMouseoutSquare: onMouseoutSquare,
