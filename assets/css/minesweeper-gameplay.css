@@ -16,10 +16,12 @@
 }
 
 .container div {
+  display: inline-block;
   font-size: 25px;
+  color: whitesmoke;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-
+  vertical-align: top;
 }
 .valid {
   height: 40px;
