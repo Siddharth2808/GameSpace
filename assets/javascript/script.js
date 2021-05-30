@@ -1,64 +1,5 @@
-var temp = 28;//Math.floor(Math.random() * 30); 
-if(temp<=8){
 var board,
-game=new Chess();
-game.move('e4')
-   // game = new Chess('rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1'  );
-}
-else if(temp<=12)
-{
-    var board,
-    game=new Chess();
-    game.move('d4')
-}
-else if(temp<=14)
-{
-    var board,
-    game=new Chess();
-    game.move('c4')
-}
-else if(temp<=16)
-{
-    var board,
-game=new Chess();
-game.move('f4')
-}
-else if(temp<=18)
-{
-    var board,
-game=new Chess();
-game.move('g4')
-}
-else if(temp<=20)
-{
-    var board,
-game=new Chess();
-game.move('b4')
-}
-else if(temp<=21)
-{
-    var board,
-game=new Chess();
-game.move('a4')
-}
-else if(temp<=22)
-{
-    var board,
-game=new Chess();
-game.move('h4')
-}
-else if(temp<=26)
-{
-    var board,
-game=new Chess();
-game.move('Nc3')
-}
-else
-{
-    var board,
-    game=new Chess();
-    game.move('Nf3')
-}
+    game = new Chess();
 
 /*The "AI" part starts here */
 
@@ -231,8 +172,8 @@ var getPieceValue = function (piece, x, y) {
         throw "Unknown piece type: " + piece.type;
     };
 
-    var absoluteValue = getAbsoluteValue(piece, piece.color === 'b', x ,y);
-    return piece.color === 'b' ? absoluteValue : -absoluteValue;
+    var absoluteValue = getAbsoluteValue(piece, piece.color === 'w', x ,y);
+    return piece.color === 'w' ? absoluteValue : -absoluteValue;
 };
 
 
@@ -240,7 +181,7 @@ var getPieceValue = function (piece, x, y) {
 
 var onDragStart = function (source, piece, position, orientation) {
     if (game.in_checkmate() === true || game.in_draw() === true ||
-        piece.search(/^w/) !== -1) {
+        piece.search(/^b/) !== -1) {
         return false;
     }
 };
@@ -342,166 +283,14 @@ var greySquare = function(square) {
     squareEl.css('background', background);
 };
 
-if(temp<=8){
 var cfg = {
     draggable: true,
     position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
-};}
-
-else if(temp<=12)
-{
-    var cfg = {
-        draggable: true,
-        position: 'start',
-        //dropOffBoard: 'trash',
-        //sparePieces: true,
-        position: 'rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1',
-         onDragStart: onDragStart,
-         onDrop: onDrop,
-         onMouseoutSquare: onMouseoutSquare,
-         onMouseoverSquare: onMouseoverSquare,
-         onSnapEnd: onSnapEnd
-    };
-}
-
-else if(temp<=14)
-{
-    var cfg = {
-        draggable: true,
-        position: 'start',
-        //dropOffBoard: 'trash',
-        //sparePieces: true,
-        position: 'rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1',
-         onDragStart: onDragStart,
-         onDrop: onDrop,
-         onMouseoutSquare: onMouseoutSquare,
-         onMouseoverSquare: onMouseoverSquare,
-         onSnapEnd: onSnapEnd
-    };
-}
-
-else if(temp<=16)
-{
-    var cfg = {
-        draggable: true,
-        position: 'start',
-        //dropOffBoard: 'trash',
-        //sparePieces: true,
-        position: 'rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq - 0 1',
-         onDragStart: onDragStart,
-         onDrop: onDrop,
-         onMouseoutSquare: onMouseoutSquare,
-         onMouseoverSquare: onMouseoverSquare,
-         onSnapEnd: onSnapEnd
-    };
-}
-
-
-
-else if(temp<=18){
-var cfg = {
-    draggable: true,
-    position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq - 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
+    //orientation: 'black',
+    onDragStart: onDragStart,
+    onDrop: onDrop,
+    onMouseoutSquare: onMouseoutSquare,
+    onMouseoverSquare: onMouseoverSquare,
+    onSnapEnd: onSnapEnd
 };
-}
-
-else if(temp<=20)
-{
-var cfg = {
-    draggable: true,
-    position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq - 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
-};
-}
-
-else if(temp<=21)
-{
-var cfg = {
-    draggable: true,
-    position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/P7/8/1PPPPPPP/RNBQKBNR b KQkq - 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
-};
-}
-
-else if(temp<=22)
-{
-var cfg = {
-    draggable: true,
-    position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq - 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
-};
-}
-
-else if(temp<=26)
-{
-var cfg = {
-    draggable: true,
-    position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq - 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
-};
-}
-
-else
-{
-var cfg = {
-    draggable: true,
-    position: 'start',
-    //dropOffBoard: 'trash',
-    //sparePieces: true,
-    position: 'rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 0 1',
-     onDragStart: onDragStart,
-     onDrop: onDrop,
-     onMouseoutSquare: onMouseoutSquare,
-     onMouseoverSquare: onMouseoverSquare,
-     onSnapEnd: onSnapEnd
-};
-}
-
-
-
-
 board = ChessBoard('board', cfg);
