@@ -39,7 +39,7 @@ function startGame() {
     //iterate over all cells 
     //console.log(cells.length);
     for (let iter = 0; iter <= 80; iter++) {    //console.log(input[iter]);
-        if (input[iter] != -1) { cells[iter].innerText = input[iter]; document.getElementById(iter).style.color = 'grey'; }
+        if (input[iter] != -1) { cells[iter].innerText = input[iter]; document.getElementById(iter).style.color = 'black'; }
         else cells[iter].innerText = "";
     }
     // for (let iter = 10; iter < cells.length; iter++) {
@@ -79,9 +79,11 @@ function reply_click(clicked_id) {
     if (gameover == 0) {
         var now = parseInt(clicked_id, 10);
         if (input[now] == -1) {
-            if (now == cellNow) { cellNow = -1; document.getElementById(now).style.background = 'cyan'; }
+            if (now == cellNow) { if(cells[cellNow].innerText=="") {document.getElementById(now).style.background = 'white';}
+                else {document.getElementById(now).style.background = 'cyan';} cellNow = -1;}
             else {
-                if (cellNow != -1) document.getElementById(cellNow).style.background = 'cyan';
+                if (cellNow != -1) { if(cells[cellNow].innerText=="") {document.getElementById(cellNow).style.background = 'white';}
+                else {document.getElementById(cellNow).style.background = 'cyan';}}
                 cellNow = now;
                 document.getElementById(now).style.background = 'blue';
             }
