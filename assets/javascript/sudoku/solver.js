@@ -54,14 +54,20 @@ function reply_click(clicked_id)
         solve_final();
         
     }
-    if(gameover==0){
-    var now = parseInt(clicked_id, 10);
-    if(now==cellNow) {cellNow=-1;document.getElementById(now).style.background = 'cyan';}
-    else{if(cellNow!=-1) document.getElementById(cellNow).style.background = 'cyan';
-    cellNow = now; 
-    document.getElementById(now).style.background = 'blue';}
-    //console.log(cellNow);
-}
+    if (gameover == 0) {
+        var now = parseInt(clicked_id, 10);
+        
+            if (now == cellNow) { if(cells[cellNow].innerText=="") {document.getElementById(now).style.background = 'white';}
+                else {document.getElementById(now).style.background = 'cyan';} cellNow = -1;}
+            else {
+                if (cellNow != -1) { if(cells[cellNow].innerText=="") {document.getElementById(cellNow).style.background = 'white';}
+                else {document.getElementById(cellNow).style.background = 'cyan';}}
+                cellNow = now;
+                document.getElementById(now).style.background = 'blue';
+            }
+            //console.log(cellNow);
+        
+    }
 }
 function isValidPlace(num)
 {   
