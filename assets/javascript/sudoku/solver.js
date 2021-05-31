@@ -145,13 +145,13 @@ function solve_final()
     }
     else
     {
-        document.getElementById("result").innerText="No solution found";
+        document.getElementById("nosol").innerText="No Solution Found";
         
     }
 }
 else
 {
-    document.getElementById("result").innerText="No solution found";
+    document.getElementById("nosol").innerText="No solution found";
 }
 }
 

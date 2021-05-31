@@ -44,6 +44,10 @@ table {
     text-align:center;
 	background-color: white;
   }
+  #nosol{
+      color: white;
+      text-align: center;
+  }
   td:first-child {
     border-left:solid;
   }
