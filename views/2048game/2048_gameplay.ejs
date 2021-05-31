@@ -4,26 +4,29 @@
 <head>
     <meta charset="utf-8">
     <title>2048</title>
-    <!-- <link rel="stylesheet" href="/css/2048_gameplay.css">
+    <link rel="stylesheet" href="/css/2048_gameplay.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="info">
-            <h1>2048</h1>
+    <section class="board">
+    <div class="info">
+        <div>
+            <h1 style="color: white;">2048</h1>
+            <span id="result">Join the numbers and get to the <b>2048</b> tile!</span>
+        </div>
             <div class="score-container">
-                <div class="score-title">score</div>
+                <div class="score-title">Score</div>
                 <span id="score">0</span>
             </div>
-        </div>
-        <span id="result">Join the numbers and get to the <b>2048</b> tile!</span>
+    </div>
+    <div class="container">
+        
         <div class="grid"></div>
     </div>
+    </section>
+    
 
     <script src="/javascript/2048_game.js"></script>
-
 </body>
-
 </html>

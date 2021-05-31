@@ -2,17 +2,18 @@
   width: 500px;
   align-content: center;
 }
-
-.grid {
-  height: 400px;
-  width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #dcd6bc;
+#result,#flags-left{
+  display: block;
   margin-left: 50px;
+}
+.grid {
+  height: 500px;
+  width: 500px;
+  background-color: #dcd6bc;
+  margin-left: 15%;
   margin-top: 20px;
   border: 10px solid #dcd6bc;
-  margin-bottom: 10px;
+
 }
 
 .container div {
@@ -24,16 +25,16 @@
   vertical-align: top;
 }
 .valid {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border: 5px solid;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
   box-sizing: border-box;
 }
 
 .checked {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border: 2px solid;
   background-color: #cecab7;
   border-color: #9c998d;
@@ -41,8 +42,8 @@
 }
 
 .bomb {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border: 5px solid;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
   box-sizing: border-box;
