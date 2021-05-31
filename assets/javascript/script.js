@@ -283,6 +283,8 @@ var greySquare = function(square) {
     squareEl.css('background', background);
 };
 
+function takeback() { game.undo(); board.position(game.fen()); updateStatus(); }
+
 var cfg = {
     draggable: true,
     position: 'start',

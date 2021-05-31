@@ -1,64 +1,58 @@
-var temp = Math.floor(Math.random() * 30); 
+ var game,temp,board;
+function jai(){
+    temp = Math.floor(Math.random() * 30);
 if(temp<=8){
-var board,
 game=new Chess();
 game.move('e4')
    // game = new Chess('rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1'  );
 }
 else if(temp<=12)
 {
-    var board,
     game=new Chess();
     game.move('d4')
 }
 else if(temp<=14)
 {
-    var board,
     game=new Chess();
     game.move('c4')
 }
 else if(temp<=16)
 {
-    var board,
 game=new Chess();
 game.move('f4')
 }
 else if(temp<=18)
 {
-    var board,
 game=new Chess();
 game.move('g4')
 }
 else if(temp<=20)
 {
-    var board,
 game=new Chess();
 game.move('b4')
 }
 else if(temp<=21)
 {
-    var board,
 game=new Chess();
 game.move('a4')
 }
 else if(temp<=22)
 {
-    var board,
 game=new Chess();
 game.move('h4')
 }
 else if(temp<=26)
 {
-    var board,
 game=new Chess();
 game.move('Nc3')
 }
 else
 {
-    var board,
     game=new Chess();
     game.move('Nf3')
 }
+}
+jai();
 
 /*The "AI" part starts here */
 
@@ -342,6 +336,8 @@ var greySquare = function(square) {
     squareEl.css('background', background);
 };
 
+function takeback() { game.undo(); board.position(game.fen()); updateStatus(); }
+function op(){
 if(temp<=8){
 var cfg = {
     orientation: 'black',
@@ -514,4 +510,10 @@ var cfg = {
 
 
 
-board = ChessBoard('board', cfg);
+board = ChessBoard('board', cfg);}
+op();
+
+function Newgame()
+{
+    jai();op();
+}
