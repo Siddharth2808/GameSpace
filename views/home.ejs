@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/chat_box.css">
     <title>Home Page</title>
 </head>
 
@@ -121,4 +122,13 @@
         crossorigin="anonymous"></script>
 </body>
 
+<%- include('_chat_box') -%>
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script src="/javascript/chat_engine.js"></script>
+<% if (locals.user){ %>
+<script>
+    new ChatEngine('user-chat-box', '<%= locals.user.email %>')
+</script>
+<% } %>
