@@ -36,7 +36,7 @@ function startGame() {
 function turnClick(square) {
     if (typeof originalBoard[square.target.id] == 'number') {
         turn(square.target.id, humanPlayer);
-        if (!checkWin(originalBoard, humanPlayer) && !checkTie()) {turn(bestSpot(), aiPlayer);checkTie();}
+        if (!checkWin(originalBoard, humanPlayer) && !checkTie()) { turn(bestSpot(), aiPlayer); checkTie(); }
     }
 }
 
@@ -86,7 +86,7 @@ function declareWinner(who) {
     // document.querySelector(".endgame").style.display = "block";
     // document.querySelector(".endgame .text").innerText = who;
     document.getElementById("result").innerText = who;
-    document.getElementById("result-button").click(); 
+    document.getElementById("result-button").click();
 }
 
 function emptySquares() {
@@ -95,10 +95,11 @@ function emptySquares() {
 
 function bestSpot() {
     //for easy mode
-    return emptySquares()[0];
+    var boardNow = emptySquares();
+    var index = Math.floor(Math.random() * (boardNow.length));
+    return boardNow[index];
     //for hard mode
-    //return minimax(originalBoard, aiPlayer).index;
-
+    // return minimax(originalBoard, aiPlayer).index;
 }
 
 function bestSpotop() {
