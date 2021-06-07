@@ -1,10 +1,11 @@
 .jumbotron{
     background-image: url("/img/back2.jpg");
-    background-size: 900px 2100px;
+    background-size: 900px 4300px;
  }
 
 
-
+.card{
+}
 .pair
 {
     display: flex;
