@@ -64,10 +64,10 @@ app.use(session({
         {
             mongooseConnection: db,
             autoRemove: 'disabled'
-        
+
         },
-        function(err){
-            console.log(err ||  'connect-mongodb setup ok');
+        function (err) {
+            console.log(err || 'connect-mongodb setup ok');
         }
     )
 }));
@@ -84,8 +84,8 @@ app.use(customMware.setFlash);
 app.use('/', require('./routes'));
 
 
-app.listen(port, function(err){
-    if (err){
+app.listen(port, function (err) {
+    if (err) {
         console.log(`Error in running the server: ${err}`);
     }
 
