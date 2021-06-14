@@ -1,4 +1,4 @@
-const io = socketIO(server);
+//const io = socketIO(server);
 var socket = io();
 module.exports.chatSockets = function (server) {
     let io = require('socket.io')(server);
