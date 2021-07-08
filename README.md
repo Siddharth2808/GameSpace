@@ -21,7 +21,7 @@ One of the objectives in building this website was to explore algorithms which a
 - Users can **sign-in/sign-up**
 - **Player-vs-computer mode** for all games
 - **Brief instructions** on how to play each game
-- **Chess Engine, Sudoku Solver and Unbeatable Tic-tac-Toe are most excited features and are implemented from scrach.**
+- **Chess Engine, Sudoku Solver and Unbeatable Tic-tac-Toe** are some of the most exciting features and have been implemented from scratch.
 - **Multiplayer** functionality for chess
 - **Chat box** on the home page can be used to message people who are currently online.
 - **Blog section** for posting updates about the website and just about anything in general.
