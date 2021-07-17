@@ -46,6 +46,9 @@ Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is 
 - Apart from that you can play on your computer with other player both online and offline. websockets are used for online mode.
 
 **2) Tic-Tac-Toe:**
+
+![gif7](https://user-images.githubusercontent.com/76950378/126050953-04f7a074-cc86-4764-8566-8f934c5387c9.gif)
+
 - In Tic-Tac-Toe 2 modes Easy and medium are available.
 - You have option to choose beyween X's and O's.
 - **Hard mode is unbeatable(implemented using min-max algorithm).**
