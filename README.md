@@ -36,6 +36,7 @@ This is the most awesome project : it includes chess engine, unbeatable tic-tac-
 Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is based on hardcore algorithms like min-max algorithm, backtracking, sorting etc. Many web technologies are also used...
 
 **1) Chess** : 
+
 ![gif6](https://user-images.githubusercontent.com/76950378/126050809-523a98a4-2285-41d8-8a51-ec34b2095acb.gif)
 
 - In chess we **implemented chess-engine using min-max algorithm with elo rating near to 1800**.
