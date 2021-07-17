@@ -36,6 +36,7 @@ Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is 
 - You can **play with White as well as Black**.
 - Option for move-history, move-back and new game is also implemented sucessfully.
 - Apart from that you can play on your computer with other player both online and offline. websockets are used for online mode.
+
 **2) Tic-Tac-Toe:**
 - In Tic-Tac-Toe 2 modes Easy and medium are available.
 - You have option to choose beyween X's and O's.
@@ -43,7 +44,7 @@ Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is 
 - Easy mode generates random number and plays.
 - So aim is to add 3rd level which is of moderate level.
 
-**3) Sudoku: **
+**3) Sudoku:**
 - In Sudoku we have three level of puzzles to play(Easy, Medium and Hard).
 - Tried to give good user experience.
 - **Apart from that we have built Sudoku-Solver using backtracking.**
