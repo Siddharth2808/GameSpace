@@ -65,11 +65,12 @@ Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is 
 
 **4) 2048**: 
 
-![gif9](https://user-images.githubusercontent.com/76950378/126051204-131a6126-c7dd-443d-98cd-53d30545a882.gif)
-
 - This is a classical fun puzzle game. Built using Javascript.
 
 **5) Minesweeper:**
+
+![gif9](https://user-images.githubusercontent.com/76950378/126051204-131a6126-c7dd-443d-98cd-53d30545a882.gif)
+
 - Do you remember this fun puzzle game, we used to play. They say this is just a fortune game, but I don't belive. So, give it a try. Link is given above.
 
 ## To do list
