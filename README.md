@@ -15,6 +15,11 @@ A game website consisting of 5 games (currently) :<br>
 There are multiple modes of difficulty within most of the games (namely _Easy_, _Medium_ and _Hard_).
 
 One of the objectives in building this website was to explore algorithms which are used in decision-making and optimization in game theory. The **minimax** algorithm is one such algorithm which has been used in both the chess and tic-tac-toe parts.
+<br/>
+<p align="center">
+  <img src="https://media.giphy.com/media/rzr8bVi7yUARMRLkhf/giphy.gif">
+</p>
+<br/>
 
 ## Overview of the website
 
