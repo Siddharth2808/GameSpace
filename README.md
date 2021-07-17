@@ -56,6 +56,9 @@ Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is 
 - So aim is to add 3rd level which is of moderate level.
 
 **3) Sudoku:**
+
+![gif8](https://user-images.githubusercontent.com/76950378/126051140-db4e892c-89e7-4109-96b2-2ba425360aa8.gif)
+
 - In Sudoku we have three level of puzzles to play(Easy, Medium and Hard).
 - Tried to give good user experience.
 - **Apart from that we have built Sudoku-Solver using backtracking.**
