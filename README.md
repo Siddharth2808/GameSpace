@@ -26,6 +26,30 @@ One of the objectives in building this website was to explore algorithms which a
 - **Chat box** on the home page can be used to message people who are currently online.
 - **Blog section** for posting updates about the website and just about anything in general.
 
+## Overview of each game
+This is the most awesome project : it includes chess engine, unbeatable tic-tac-toe, Sudoku solver and many more cool features.
+Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is based on hardcore algorithms like min-max algorithm, backtracking, sorting etc. Many web technologies are also used...
+**1) Chess** : 
+- In chess we **implemented chess-engine using min-max algorithm with elo rating near to 1800**.
+- **Three modes easy, medium and hard** are available to play and an extra **analysis mode** is also given to analyse your game at extra depth.
+- You can **play with White as well as Black**.
+- Option for move-history, move-back and new game is also implemented sucessfully.
+- Apart from that you can play on your computer with other player both online and offline. websockets are used for online mode.
+2) Tic-Tac-Toe:
+- In Tic-Tac-Toe 2 modes Easy and medium are available.
+- You have option to choose beyween X's and O's.
+- **Hard mode is unbeatable(implemented using min-max algorithm).**
+- Easy mode generates random number and plays.
+- So aim is to add 3rd level which is of moderate level.
+
+3) Sudoku: 
+- In Sudoku we have three level of puzzles to play(Easy, Medium and Hard).
+- Tried to give good user experience.
+- **Apart from that we have built Sudoku-Solver using backtracking.**
+
+4) 2048: This is a classical fun puzzle game. Built using Javascript.
+5) Minesweeper: Do you remember this fun puzzle game, we used to play. They say this is just a fortune game, but I don't belive. So, give it a try. Link is given above.
+
 ## To do list
 
 - Currently users do not have a personal profile page where they could see their personal stats like their highest score, winning streak etc.
