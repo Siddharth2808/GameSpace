@@ -64,14 +64,16 @@ Consisting 5 games: Chess, Tic-tac-toe,Sudoku, 2048 and Minesweeper. Project is 
 - **Apart from that we have built Sudoku-Solver using backtracking.**
 
 **4) 2048**: 
-
 - This is a classical fun puzzle game. Built using Javascript.
 
+![gif10](https://user-images.githubusercontent.com/76950378/126051295-3e3fe548-e595-4c66-89f2-5f479077da83.gif)
+
+
 **5) Minesweeper:**
+- Do you remember this fun puzzle game, we used to play. They say this is just a fortune game, but I don't belive. So, give it a try. Link is given above.
 
 ![gif9](https://user-images.githubusercontent.com/76950378/126051204-131a6126-c7dd-443d-98cd-53d30545a882.gif)
 
-- Do you remember this fun puzzle game, we used to play. They say this is just a fortune game, but I don't belive. So, give it a try. Link is given above.
 
 ## To do list
 
