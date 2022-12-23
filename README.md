@@ -1,6 +1,6 @@
 # GameSpace
 
-You are requested to see the deployed version of this project, you can check it out by visiting this [link](http://gamespace-app.herokuapp.com/).
+You are requested to see the deployed version of this project, you can check it out by visiting this [link](https://gamespace-v4xw.onrender.com/).
 
 ## About the project
 
