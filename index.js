@@ -1,7 +1,8 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
+const bodyParser = require("body-parser");
 const app = express();
-const port = process.env.PORT;
+const port = 7001;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 // used for session cookie
@@ -19,8 +20,8 @@ const customMware = require('./config/middleware');
 // setup the chat server to be used with socket.io
 const chatServer = require('http').createServer(app);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
-chatServer.listen(5000);
-console.log('chat server is listening on port 5000');
+chatServer.listen(6000);
+console.log('chat server is listening on port 6000');
 
 
 // app.use(sassMiddleware({
@@ -30,7 +31,8 @@ console.log('chat server is listening on port 5000');
 //     outputStyle: 'extended',
 //     prefix: '/css'
 // }));
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
