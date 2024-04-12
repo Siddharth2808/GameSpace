@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://admin:Ass159753@cluster0.dtlmx.mongodb.net/Gamespace_development');
+mongoose.connect("mongodb://localhost:27017/gamespace", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
 
 const db = mongoose.connection;
 
