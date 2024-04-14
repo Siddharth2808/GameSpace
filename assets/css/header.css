@@ -1,21 +1,36 @@
+.nav-item1 {
+  border: 2px solid white;
+  border-radius: 24px;
+  margin-right: 20px;
+  color: black;
+  padding: 0 10px;
+}
 #layout-header nav {
-  
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
-  background: #2196f3;
+  padding: 10px 10px;
+  position: sticky;
+  background-color: rgb(11 11 101);
+}
+
+#layout-header nav .mini-logo p {
+  margin: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#layout-header nav .auth-links ul {
+  margin: 5% 5px;
+  display: flex;
+}
+#layout-header nav .auth-links ul li {
+  margin-right: 10px;
+}
+#layout-header nav a {
   color: white;
-  box-shadow: 1px 1px 1px 1px lightgrey; }
-  #layout-header nav .mini-logo p {
-    margin: 5px;
-    font-size: 1.4rem;
-    font-weight: bold; }
-  #layout-header nav .auth-links ul {
-    margin: 5% 5px;
-    display: flex; }
-    #layout-header nav .auth-links ul li {
-      margin-right: 10px; }
-  #layout-header nav a {
-    color: white;
-    text-decoration: none; }
+  text-decoration: none;
+}
+
+.navbar-nav li {
+  margin-right: 10px;
+}

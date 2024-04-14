@@ -1,21 +1,21 @@
-html, body {
-    height: 100%;
-    
-    /* background-image: url('/img/back.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%; */
-  }
-#layout-main{
-  background-color: rgb(49, 46 ,43);
-    display: block;
-    min-height: 65%;
-    
-} 
-footer{
-    position:relative;
-    display: block;
- 
+html,
+body {
+  height: 100%;
+  background-image: url("https://www.fishbowlapp.com/img/home/wave-backdrop-blue.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+#layout-main {
+  background-color: white;
+  color: black;
+  display: block;
+  min-height: 75%;
+}
+footer {
+  position: relative;
+  display: block;
   left: 0;
   bottom: 0;
-  width: 100%;}
+  width: 100%;
+}
