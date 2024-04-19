@@ -1,27 +1,26 @@
-html, body
-{
-    width:100%;
+html,
+body {
+  width: 100%;
 }
-.cboard{
-    /* display: inline-block; */
-    width: 80%;
-    height: 85%;
-    margin-left:  80px;
+.cboard {
+  /* display: inline-block; */
+  width: 80%;
+  height: 85%;
+  margin-left: 80px;
 }
-.typlist li{
-    margin:20px;
+.typlist li {
+  margin: 20px;
 }
 .btn.btn-outline-warning {
-    color: black;
+  color: black;
 }
-ul{
-    list-style-type: none;
-    
+ul {
+  list-style-type: none;
 }
-aside{
-    display: inline-block;
-    position: absolute; 
-    width: 30%;
-    left: 800px;
-    top: 100px;
+aside {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  left: 800px;
+  top: 100px;
 }

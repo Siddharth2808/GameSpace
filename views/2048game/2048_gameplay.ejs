@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
+<html
+  lang="en"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8" />
     <title>2048</title>
-    <link rel="stylesheet" href="/css/2048_gameplay.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="/css/2048_gameplay.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <section class="board">
-    <div class="info">
+      <div class="info">
         <div>
-            <h1 style="color: white;">2048</h1>
-            <span id="result">Join the numbers and get to the <b>2048</b> tile!</span>
+          <h1 style="color: white">2048</h1>
+          <span id="result"
+            >Join the numbers and get to the <b>2048</b> tile!</span
+          >
         </div>
-            <div class="score-container">
-                <div class="score-title">Score</div>
-                <span id="score">0</span>
-            </div>
-    </div>
-    <div class="container">
-        
+        <div class="score-container">
+          <div class="score-title">Score</div>
+          <span id="score">0</span>
+        </div>
+      </div>
+      <div class="container">
         <div class="grid"></div>
-    </div>
+      </div>
     </section>
-    
 
     <script src="/javascript/2048_game.js"></script>
-</body>
+  </body>
 </html>
