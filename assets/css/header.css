@@ -5,6 +5,10 @@
   color: black;
   padding: 0 10px;
 }
+
+#layout-header {
+  min-width: 100vw;
+}
 #layout-header nav {
   font-family: "Roboto Mono", monospace;
   display: flex;
@@ -12,6 +16,7 @@
   padding: 10px 10px;
   position: sticky;
   background-color: rgb(11 11 101);
+  min-width: 100vw;
 }
 
 #layout-header nav .mini-logo p {

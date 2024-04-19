@@ -1,10 +1,6 @@
-html,
-body {
-  height: 100%;
-  background-image: url("https://www.fishbowlapp.com/img/home/wave-backdrop-blue.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+body{
+  min-width: 100vw;
+  /* overflow-x: hidden; */
 }
 #layout-main {
   background-color: white;
@@ -13,9 +9,10 @@ body {
   min-height: 75%;
 }
 footer {
+  background-color: rgb(15, 15, 55);
   position: relative;
   display: block;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
 }

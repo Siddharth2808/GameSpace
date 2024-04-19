@@ -15,6 +15,9 @@ ul{
     list-style-type: none;
     
 }
+.btn.btn-outline-warning {
+    color: black;
+}
 aside{
     display: block;
     position: absolute; 

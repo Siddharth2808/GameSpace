@@ -11,6 +11,9 @@ html, body
 .typlist li{
     margin:20px;
 }
+.btn.btn-outline-warning {
+    color: black;
+}
 ul{ 
     list-style-type: none;
 }

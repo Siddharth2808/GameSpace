@@ -1,84 +1,84 @@
 body {
-    background-color: #faf8ef;
-    justify-content: center;
-    font-family: "Clear Sans", "Helvetica Neue"
-  }
-  .board {
-    display: inline-block;
-    width: 42%;
-    margin-left: 30%;
-
+  background-color: #faf8ef;
+  justify-content: center;
+  font-family: "Clear Sans", "Helvetica Neue";
 }
-  h1 {
-    font-size: 80px;
-    line-height: 0.7;
-    color: #776E65;
-    margin: 0px;
-  }
-  
+.board {
+  display: inline-block;
+  width: 42%;
+  margin-left: 30%;
+}
+.btn.btn-outline-warning {
+  color: black;
+}
+h1 {
+  font-size: 80px;
+  line-height: 0.7;
+  color: #776e65;
+  margin: 0px;
+}
 
-  /* .info {
+/* .info {
     color: white;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
   } */
-  
+
 .info {
   margin-left: 30px;
   display: flex;
   color: white;
-
 }
 /* .outer-container{
   background-color: #fafaee;
   height: 500px;
   width: 500px;
 } */
-  #result{
-    color: white;
-  }
-  .grid{
-    display: flex;
-    flex-wrap: wrap;
-    width: 440px;
-    height: 425px;
-    background-color: #BBADA0;
-    border: 7px solid #BBADA0;
-    border-radius: 6px;
-    margin-top: 20px;
-  }
-  
-  .grid div {
-    width: 90px;
-    height: 90px;
-    margin: 7px;
-    border-radius: 3px;
-    background-color: #EEE4DA;
-    color: #afa192;
-    font-weight: bold;
-    text-align: center;
-    font-size: 60px;
-    line-height: 1.6;
-  }
-  
-  .score-container {
-    margin-top: 5px;
-    margin-left: 50px;
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    width: 70px;
-    height: 80px;
-    border-radius: 3px;
-    background-color: #8f7a66;
-    color: #FFFFFF;
-  }
-  
-  #score {
-    font-size: 30px;
-  }
-  
-  .score-title {
-    font-size: 16px;
-  }
+#result {
+  color: white;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+  height: 425px;
+  background-color: #bbada0;
+  border: 7px solid #bbada0;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.grid div {
+  width: 90px;
+  height: 90px;
+  margin: 7px;
+  border-radius: 3px;
+  background-color: #eee4da;
+  color: #afa192;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.6;
+}
+
+.score-container {
+  margin-top: 5px;
+  margin-left: 50px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 70px;
+  height: 80px;
+  border-radius: 3px;
+  background-color: #8f7a66;
+  color: #ffffff;
+}
+
+#score {
+  font-size: 30px;
+}
+
+.score-title {
+  font-size: 16px;
+}

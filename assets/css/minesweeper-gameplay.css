@@ -2,7 +2,8 @@
   width: 500px;
   align-content: center;
 }
-#result,#flags-left{
+#result,
+#flags-left {
   display: block;
   margin-left: 50px;
 }
@@ -13,15 +14,16 @@
   margin-left: 15%;
   margin-top: 20px;
   border: 10px solid #dcd6bc;
-
 }
-
+.btn.btn-outline-warning {
+    color: black;
+}
 .container div {
   display: inline-block;
   font-size: 25px;
   color: whitesmoke;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   vertical-align: top;
 }
 .valid {
@@ -61,7 +63,7 @@
   color: #57da59;
 }
 
-.four{
+.four {
   color: #bb41d3;
 }
 
