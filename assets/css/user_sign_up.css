@@ -1,12 +1,11 @@
 .sign-up-top {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-section{
-    color: black;
-    display: block;
-    position: absolute;
-    
+section {
+  color: black;
+  display: block;
+  position: absolute;
 }
 /* Styles for sign-up form container */
 .signup-form {

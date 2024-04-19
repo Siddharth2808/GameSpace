@@ -1,18 +1,18 @@
 .sign-in-top {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    /* align-items: center; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* align-items: center; */
 }
-h3{
-    color: black;
+h3 {
+  color: black;
 }
-section{
-    color: black;
-    display: flex;
-    justify-content: center;
-    /* position: absolute; */
-    background-color: white;
+section {
+  color: black;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  background-color: white;
 }
 /* Styles for form container */
 .cool-form {

@@ -1,12 +1,11 @@
 var board,
-    game = new Chess();
+  game = new Chess();
 
 var onDragStart = function (source, piece, position, orientation) {
-    if (game.in_checkmate() === true || game.in_draw() === true)
-        // ||piece.search(/^b/) !== -1) 
-        {
-        return false;
-    }
+  if (game.in_checkmate() === true || game.in_draw() === true) {
+    // ||piece.search(/^b/) !== -1)
+    return false;
+  }
 };
 
 // var makeBestMove = function () {
@@ -18,7 +17,6 @@ var onDragStart = function (source, piece, position, orientation) {
 //         alert('Game over');
 //     }
 // };
-
 
 var positionCount;
 // var getBestMove = function (game) {
@@ -42,81 +40,85 @@ var positionCount;
 // };
 
 var renderMoveHistory = function (moves) {
-    var historyElement = $('#move-history').empty();
-    historyElement.empty();
-    for (var i = 0; i < moves.length; i = i + 2) {
-        historyElement.append('<span>' + moves[i] + ' ' + ( moves[i + 1] ? moves[i + 1] : ' ') + '</span><br>')
-    }
-    historyElement.scrollTop(historyElement[0].scrollHeight);
-
+  var historyElement = $("#move-history").empty();
+  historyElement.empty();
+  for (var i = 0; i < moves.length; i = i + 2) {
+    historyElement.append(
+      "<span>" +
+        moves[i] +
+        " " +
+        (moves[i + 1] ? moves[i + 1] : " ") +
+        "</span><br>"
+    );
+  }
+  historyElement.scrollTop(historyElement[0].scrollHeight);
 };
 
 var onDrop = function (source, target) {
+  var move = game.move({
+    from: source,
+    to: target,
+    promotion: "q",
+  });
 
-    var move = game.move({
-        from: source,
-        to: target,
-        promotion: 'q'
-    });
+  removeGreySquares();
+  if (move === null) {
+    return "snapback";
+  }
 
-    removeGreySquares();
-    if (move === null) {
-        return 'snapback';
-    }
-
-    renderMoveHistory(game.history());
-    if (game.game_over()) {
-        alert('Game over');
-    }
-   // window.setTimeout(makeBestMove, 250);
+  renderMoveHistory(game.history());
+  if (game.game_over()) {
+    alert("Game over");
+  }
+  // window.setTimeout(makeBestMove, 250);
 };
 
 var onSnapEnd = function () {
-    board.position(game.fen());
+  board.position(game.fen());
 };
 
-var onMouseoverSquare = function(square, piece) {
-    var moves = game.moves({
-        square: square,
-        verbose: true
-    });
+var onMouseoverSquare = function (square, piece) {
+  var moves = game.moves({
+    square: square,
+    verbose: true,
+  });
 
-    if (moves.length === 0) return;
+  if (moves.length === 0) return;
 
-    greySquare(square);
+  greySquare(square);
 
-    for (var i = 0; i < moves.length; i++) {
-        greySquare(moves[i].to);
-    }
+  for (var i = 0; i < moves.length; i++) {
+    greySquare(moves[i].to);
+  }
 };
 
-var onMouseoutSquare = function(square, piece) {
-    removeGreySquares();
+var onMouseoutSquare = function (square, piece) {
+  removeGreySquares();
 };
 
-var removeGreySquares = function() {
-    $('#board .square-55d63').css('background', '');
+var removeGreySquares = function () {
+  $("#board .square-55d63").css("background", "");
 };
 
-var greySquare = function(square) {
-    var squareEl = $('#board .square-' + square);
+var greySquare = function (square) {
+  var squareEl = $("#board .square-" + square);
 
-    var background = '#a9a9a9';
-    if (squareEl.hasClass('black-3c85d') === true) {
-        background = '#696969';
-    }
+  var background = "#a9a9a9";
+  if (squareEl.hasClass("black-3c85d") === true) {
+    background = "#696969";
+  }
 
-    squareEl.css('background', background);
+  squareEl.css("background", background);
 };
 
 var cfg = {
-    draggable: true,
-    position: 'start',
-    //orientation: 'black',
-    onDragStart: onDragStart,
-    onDrop: onDrop,
-    onMouseoutSquare: onMouseoutSquare,
-    onMouseoverSquare: onMouseoverSquare,
-    onSnapEnd: onSnapEnd
+  draggable: true,
+  position: "start",
+  //orientation: 'black',
+  onDragStart: onDragStart,
+  onDrop: onDrop,
+  onMouseoutSquare: onMouseoutSquare,
+  onMouseoverSquare: onMouseoverSquare,
+  onSnapEnd: onSnapEnd,
 };
-board = ChessBoard('board', cfg);
+board = ChessBoard("board", cfg);
