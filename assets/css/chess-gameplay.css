@@ -1,29 +1,57 @@
 .board {
   display: inline-block;
-  width: 42%;
+  width: calc(45%);
+  margin-top: 2.5vh;
   margin-left: 80px;
+  align-items: center;
 }
+
 .btn.btn-outline-warning {
   color: black;
 }
+
 .info {
   display: inline-block;
-  width: 400px;
-  margin: auto;
+  width: 30%;
+  margin-top: 2.5vh;
+  margin-left: 20px;
   vertical-align: top;
-  margin-left: 200px;
-  margin-top: 30px;
   color: black;
 }
 
 .move-history {
-  display: block;
   height: 200px;
   max-height: 300px;
   overflow-y: auto;
   border-radius: 20px;
-  border: rgb(0, 0, 0);
-  border-style: solid;
+  border: 1px solid black;
   color: black;
   padding: 10px;
+}
+
+#search-depth {
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #0c0c0c;
+  background-color: #8b7c7c;
+  appearance: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+#search-depth option {
+  padding: 10px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+#search-depth:hover {
+  background-color: #495057;
+}
+
+#search-depth:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
