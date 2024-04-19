@@ -24,6 +24,9 @@ table {
 }  */
 /* .board{
 } */
+.btn.btn-outline-warning {
+    color: black;
+}
 table {
 	
 	margin-left: 30%;

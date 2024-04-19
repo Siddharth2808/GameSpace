@@ -10,7 +10,9 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-
+.btn.btn-outline-warning {
+  color: black;
+}
 .team-description {
   color: #6c757d;
   font-size: 18px;

@@ -27,7 +27,8 @@ table {
 	 /* margin-left: 155px;  */
 	/* top: 50px;
 }  */
-.board{
+.btn.btn-outline-warning {
+    color: black;
 }
 table {
 	

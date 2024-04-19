@@ -22,3 +22,6 @@ aside{
     left: 800px;
     top: 100px;
 }
+.btn.btn-outline-warning {
+    color: black;
+}

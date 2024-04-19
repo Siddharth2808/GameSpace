@@ -78,3 +78,6 @@
 .cool-item:hover::after {
   opacity: 1;
 }
+.btn.btn-outline-warning {
+  color: black;
+}
