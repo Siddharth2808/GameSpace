@@ -3,22 +3,25 @@
   href="/css/user_profile.css"
 />
 <!-- <h1 style="color: black">Gamespace | <%= title %></h1> -->
-<%if(user.avatar){ %>
-<img
-  src="<%= user.avatar %>"
-  alt="<%= user.name %>"
-  width="100"
-/>
-<% } %>
+<div class="container">
+  <%if(user.avatar){ %>
+  <img
+    src="<%= user.avatar %>"
+    alt="<%= user.name %>"
+    width="100"
+  />
+  <% } %>
 
-<p><%= user.name %></p>
-<p><%= user.email %></p>
+  <p><%= user.name %></p>
+  <p><%= user.email %></p>
+</div>
 
 <!-- if user matches then show the form -->
 <form
   action="/users/update/<%= user.id %>"
   enctype="multipart/form-data"
   method="POST"
+  id="updateForm"
 >
   <input
     type="text"
@@ -43,5 +46,14 @@
   <input
     type="submit"
     value="Update"
+    id="submitButton"
   />
 </form>
+
+<script>
+  document
+    .getElementById("submitButton")
+    .addEventListener("click", function (event) {
+      window.location.href = "/";
+    });
+</script>
