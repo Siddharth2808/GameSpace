@@ -5,10 +5,10 @@
   color: black;
   padding: 0 10px;
 }
-
+/* 
 #layout-header {
-  min-width: 100vw;
-}
+  max-width: calc(100vw-100px);
+} */
 #layout-header nav {
   font-family: "Roboto Mono", monospace;
   display: flex;

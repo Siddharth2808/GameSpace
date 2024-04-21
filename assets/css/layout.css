@@ -1,6 +1,6 @@
 body {
-  min-width: 100vw;
-  /* overflow-x: hidden; */
+  max-width: fit-content;
+  overflow-x: hidden;
 }
 #layout-main {
   background-color: white;
